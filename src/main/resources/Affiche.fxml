@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="tn.esprit.controllers.AfficheController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <TableView fx:id="sinistreTableView" layoutX="30.0" layoutY="50.0" prefHeight="300.0" prefWidth="540.0">
+        <columns>
+            <TableColumn text="ID" prefWidth="50">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Client ID" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="sinistre_client_id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Expert ID" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="sinistre_expert_id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Is Fautif" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="is_fautif" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Pourcentage" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="pourcentage" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Rapport" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="rapport" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+
+</AnchorPane>

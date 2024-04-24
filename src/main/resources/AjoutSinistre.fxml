@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BACDBC;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.AjouterSinistreController">
+
+    <VBox alignment="CENTER" layoutX="174.0" layoutY="72.0" spacing="10">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Ajouter un Sinistre" />
+
+        <HBox spacing="10">
+            <Label text="ID Client:" />
+            <TextField fx:id="clientIdTextField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="ID Expert:" />
+            <TextField fx:id="expertIdTextField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Est Fautif:" />
+            <TextField fx:id="isFautifTextField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Pourcentage:" />
+            <TextField fx:id="pourcentageTextField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Rapport:" />
+            <TextField fx:id="rapportTextField" />
+        </HBox>
+
+        <Button onAction="#clicKAddSinistre" style="-fx-background-color: #53647E;" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+    </VBox>
+
+</AnchorPane>
